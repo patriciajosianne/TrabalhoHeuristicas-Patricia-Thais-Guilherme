@@ -1,0 +1,8 @@
+C:\Users\Thais\Desktop\Heuristicas\CaixeiroViajante\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Patricia\Desktop\Heuristicas\CaixeiroViajante\bin\Debug\CaixeiroViajante.dll
+C:\Users\Patricia\Desktop\Heuristicas\CaixeiroViajante\bin\Debug\CaixeiroViajante.pdb
+C:\Users\Patricia\Desktop\Heuristicas\CaixeiroViajante\bin\Debug\HeuristicaConstrutiva.dll
+C:\Users\Patricia\Desktop\Heuristicas\CaixeiroViajante\bin\Debug\HeuristicaConstrutiva.pdb
+C:\Users\Patricia\Desktop\Heuristicas\CaixeiroViajante\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Patricia\Desktop\Heuristicas\CaixeiroViajante\obj\Debug\CaixeiroViajante.dll
+C:\Users\Patricia\Desktop\Heuristicas\CaixeiroViajante\obj\Debug\CaixeiroViajante.pdb

@@ -1,0 +1,10 @@
+C:\Users\Thais\Desktop\Heuristicas\HeuristicaConstrutiva\bin\Debug\HeuristicaConstrutiva.dll
+C:\Users\Thais\Desktop\Heuristicas\HeuristicaConstrutiva\bin\Debug\HeuristicaConstrutiva.pdb
+C:\Users\Thais\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thais\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.dll
+C:\Users\Thais\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.pdb
+C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\bin\Debug\HeuristicaConstrutiva.dll
+C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\bin\Debug\HeuristicaConstrutiva.pdb
+C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.dll
+C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.pdb
