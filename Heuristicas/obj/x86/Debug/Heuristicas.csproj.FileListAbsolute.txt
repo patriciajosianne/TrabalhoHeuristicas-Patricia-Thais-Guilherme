@@ -22,3 +22,16 @@ C:\Users\Patricia\Desktop\Heuristicas\Heuristicas\bin\Debug\ProblemaMochila.pdb
 C:\Users\Patricia\Desktop\Heuristicas\Heuristicas\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Patricia\Desktop\Heuristicas\Heuristicas\obj\x86\Debug\Heuristicas.exe
 C:\Users\Patricia\Desktop\Heuristicas\Heuristicas\obj\x86\Debug\Heuristicas.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\obj\x86\Debug\Heuristicas.exe
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\obj\x86\Debug\Heuristicas.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\Heuristicas.exe
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\Heuristicas.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\CaixeiroViajante.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\HeuristicaConstrutiva.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\HeuristicaMelhoria.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\ProblemaMochila.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\CaixeiroViajante.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\HeuristicaConstrutiva.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\HeuristicaMelhoria.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\ProblemaMochila.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\obj\x86\Debug\ResolveAssemblyReference.cache

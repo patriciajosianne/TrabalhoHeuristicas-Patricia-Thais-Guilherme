@@ -178,6 +178,42 @@ namespace Heuristicas
             Vertice sp = new Vertice("SP");
             Vertice se = new Vertice("SE");
 
+            ba.Add(df, 1446);
+            ba.Add(es, 1202);
+            ba.Add(mg, 1372);
+            ba.Add(pr, 2385);
+            ba.Add(rj, 1649);
+            ba.Add(se, 2682);
+            ba.Add(sp, 1962);
+
+            df.Add(es, 1239);
+            df.Add(mg, 716);
+            df.Add(pr, 1366);
+            df.Add(rj, 1148);
+            df.Add(se, 1673);
+            df.Add(sp, 1015);
+
+            es.Add(mg, 524);
+            es.Add(pr, 1300);
+            es.Add(rj, 521);
+            es.Add(se, 1597);
+            es.Add(sp, 882);
+            
+            mg.Add(pr, 1004);
+            mg.Add(rj, 434);
+            mg.Add(se, 1301);
+            mg.Add(sp, 586);
+
+            pr.Add(rj, 852);
+            pr.Add(se, 300);
+            pr.Add(sp, 408);
+
+            rj.Add(se, 1144);
+            rj.Add(sp, 429);
+
+            se.Add(sp, 705);
+           
+
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = ba, CidadeDestino = df, Distancia = 1446 });
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = ba, CidadeDestino = es, Distancia = 1202 });
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = ba, CidadeDestino = mg, Distancia = 1372 });
@@ -198,7 +234,7 @@ namespace Heuristicas
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = es, CidadeDestino = rj, Distancia = 521 });
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = es, CidadeDestino = se, Distancia = 1597 });
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = es, CidadeDestino = sp, Distancia = 882 });
-
+            
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = mg, CidadeDestino = pr, Distancia = 1004 });
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = mg, CidadeDestino = rj, Distancia = 434 });
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = mg, CidadeDestino = se, Distancia = 1301 });

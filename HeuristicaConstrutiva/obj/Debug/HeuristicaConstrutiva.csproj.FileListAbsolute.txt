@@ -8,3 +8,8 @@ C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\bin\Debug\Heuristica
 C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.dll
 C:\Users\Patricia\Desktop\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaConstrutiva\bin\Debug\HeuristicaConstrutiva.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaConstrutiva\bin\Debug\HeuristicaConstrutiva.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaConstrutiva\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaConstrutiva\obj\Debug\HeuristicaConstrutiva.pdb

@@ -12,3 +12,10 @@ C:\Users\Patricia\Desktop\Heuristicas\HeuristicaMelhoria\bin\Debug\HeuristicaCon
 C:\Users\Patricia\Desktop\Heuristicas\HeuristicaMelhoria\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Patricia\Desktop\Heuristicas\HeuristicaMelhoria\obj\Debug\HeuristicaMelhoria.dll
 C:\Users\Patricia\Desktop\Heuristicas\HeuristicaMelhoria\obj\Debug\HeuristicaMelhoria.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaMelhoria\bin\Debug\HeuristicaMelhoria.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaMelhoria\bin\Debug\HeuristicaMelhoria.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaMelhoria\bin\Debug\HeuristicaConstrutiva.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaMelhoria\bin\Debug\HeuristicaConstrutiva.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaMelhoria\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaMelhoria\obj\Debug\HeuristicaMelhoria.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\HeuristicaMelhoria\obj\Debug\HeuristicaMelhoria.pdb

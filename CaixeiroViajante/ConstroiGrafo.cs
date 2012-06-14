@@ -39,7 +39,7 @@ namespace CaixeiroViajante
                         arestas.Add(a);
             }
             else
-                foreach (Aresta a in VerticesJaVisitados.Last().Arestas())
+                foreach (Aresta a in VerticesJaVisitados.Last().Arestas())//isso não está funcionando. Não está retornando nada.
                     if (!VerificaSeJaFoiVizitado(a)) 
                         arestas.Add(a);
             return arestas;
@@ -66,6 +66,9 @@ namespace CaixeiroViajante
                     if ((int)melhor.Valor < (int)aresta.Valor)
                         melhor = aresta;
             }
+            if(melhor != null)
+                VerticesJaVisitados.Enqueue(melhor.CidadeDestino);
+
             return melhor;
         }
 

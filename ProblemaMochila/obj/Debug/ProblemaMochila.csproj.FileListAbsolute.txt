@@ -16,3 +16,12 @@ C:\Users\Patricia\Desktop\Heuristicas\ProblemaMochila\bin\Debug\HeuristicaMelhor
 C:\Users\Patricia\Desktop\Heuristicas\ProblemaMochila\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Patricia\Desktop\Heuristicas\ProblemaMochila\obj\Debug\ProblemaMochila.dll
 C:\Users\Patricia\Desktop\Heuristicas\ProblemaMochila\obj\Debug\ProblemaMochila.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\bin\Debug\ProblemaMochila.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\bin\Debug\ProblemaMochila.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\bin\Debug\HeuristicaConstrutiva.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\bin\Debug\HeuristicaMelhoria.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\bin\Debug\HeuristicaConstrutiva.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\bin\Debug\HeuristicaMelhoria.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\obj\Debug\ProblemaMochila.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaMochila\obj\Debug\ProblemaMochila.pdb
