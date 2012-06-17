@@ -9,13 +9,28 @@ namespace ProblemaQuadroHorarios
 {
     public class Alocacao : IComponente
     {
-        #region IComponente Members
 
+        public Professor Professor { get; set; }
+        public Horario Horario { get; set; }
+
+        public Alocacao()
+        {
+            Professor = new Professor();
+            Horario = new Horario();
+        }
+
+        public Alocacao(Professor prof, Horario horario)
+        {
+            Professor = prof;
+            Horario = horario;
+        }
+        
+        //verificar se vai precisar
         public object Valor
         {
             get { throw new NotImplementedException(); }
         }
 
-        #endregion
+        
     }
 }

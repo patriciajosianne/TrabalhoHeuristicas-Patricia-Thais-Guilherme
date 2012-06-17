@@ -63,6 +63,10 @@
       <Project>{ABB230D4-DBDB-4E19-B9AF-0CBE70BF7B1B}</Project>
       <Name>ProblemaMochila</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ProblemaQuadroHorarios\ProblemaQuadroHorarios.csproj">
+      <Project>{27C5B080-D4B2-4DC0-A1C3-68F6E16675B2}</Project>
+      <Name>ProblemaQuadroHorarios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

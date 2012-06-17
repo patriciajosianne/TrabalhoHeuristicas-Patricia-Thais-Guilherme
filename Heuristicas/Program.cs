@@ -6,6 +6,7 @@ using System.Text;
 using HeuristicaConstrutiva;
 using HeuristicaMelhoria;
 using CaixeiroViajante;
+using ProblemaQuadroHorarios;
 
 namespace Heuristicas
 {
@@ -167,7 +168,7 @@ namespace Heuristicas
             constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("SE"), CidadeDestino = new Vertice("SP"), Distancia = 705 });
             */
 
-            ConstroiGrafo constroiGrafo = new ConstroiGrafo(8);
+            /*ConstroiGrafo constroiGrafo = new ConstroiGrafo(8);
             
             Vertice ba = new Vertice("BA");
             Vertice df = new Vertice("DF");
@@ -259,6 +260,86 @@ namespace Heuristicas
             {
                 Aresta aresta = (Aresta)a;
                 System.Console.WriteLine("\nCidade Origem" + aresta.CidadeOrigem.Valor + " \t\tCidade Destino: " + aresta.CidadeDestino.Valor + " \t\tDistancia: " + aresta.Distancia);
+            }*/
+
+            ConstroiQuadroHorario cqh = new ConstroiQuadroHorario();
+
+
+            //Horários
+            Horario seg12 = new Horario("seg12");
+            cqh.Horarios.Add(seg12);
+
+            Horario seg34 = new Horario("seg34");
+            cqh.Horarios.Add(seg34);
+
+            Horario ter12 = new Horario("ter12");
+            cqh.Horarios.Add(ter12);
+
+            Horario ter34 = new Horario("ter34");
+            cqh.Horarios.Add(ter34);
+
+            Horario qua12 = new Horario("qua12");
+            cqh.Horarios.Add(qua12);
+
+            Horario qua34 = new Horario("qua34");
+            cqh.Horarios.Add(qua34);
+
+            Horario qui12 = new Horario("qui12");
+            cqh.Horarios.Add(qui12);
+
+            Horario qui34 = new Horario("qui34");
+            cqh.Horarios.Add(qui34);
+
+            Horario sex12 = new Horario("sex12");
+            cqh.Horarios.Add(sex12);
+
+            Horario sex34 = new Horario("sex34");
+            cqh.Horarios.Add(sex34);
+
+
+            //Professores
+            Professor p1 = new Professor("p1");
+            cqh.Professores.Add(p1);
+
+            Professor p2 = new Professor("p2");
+            cqh.Professores.Add(p2);
+            
+            Professor p3 = new Professor("p3");
+            cqh.Professores.Add(p3);
+            
+            Professor p4 = new Professor("p4");
+            cqh.Professores.Add(p4);
+            
+            Professor p5 = new Professor("p5");
+            cqh.Professores.Add(p5);
+
+
+
+            //Restrições
+            cqh.AddRestricao(p1, seg12);
+            cqh.AddRestricao(p1, ter12);
+            cqh.AddRestricao(p1, qui12);
+
+            cqh.AddRestricao(p2, qui34);
+            cqh.AddRestricao(p2, sex34);
+
+            cqh.AddRestricao(p3, ter34);
+            cqh.AddRestricao(p3, qua12);
+            cqh.AddRestricao(p3, qua34);
+
+            cqh.AddRestricao(p4, qui12);
+            cqh.AddRestricao(p4, sex34);
+
+            cqh.AddRestricao(p5, ter12);
+            cqh.AddRestricao(p5, qua12);
+            cqh.AddRestricao(p5, qui12);
+
+            cqh.GerarSolucao();
+
+            foreach (IComponente a in cqh.Solucao.Componentes)
+            {
+                Alocacao alocacao = (Alocacao)a;
+                System.Console.WriteLine("\nHorário" + alocacao.Horario.Id + " \t\tProfessor: " + alocacao.Professor.Nome);
             }
         }
     }

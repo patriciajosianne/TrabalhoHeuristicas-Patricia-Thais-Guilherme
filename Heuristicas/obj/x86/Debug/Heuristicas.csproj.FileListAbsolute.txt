@@ -35,3 +35,5 @@ D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuris
 D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\HeuristicaMelhoria.pdb
 D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\ProblemaMochila.pdb
 D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\ProblemaQuadroHorarios.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\Heuristicas\bin\Debug\ProblemaQuadroHorarios.pdb

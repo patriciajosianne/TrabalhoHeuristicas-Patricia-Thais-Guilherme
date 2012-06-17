@@ -9,18 +9,11 @@ namespace ProblemaQuadroHorarios
 {
     public class QuadroHorario : ISolucao
     {
-        #region ISolucao Members
 
         public List<IComponente> Componentes
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get;
+            set;
         }
 
         public float Avaliacao
@@ -28,16 +21,22 @@ namespace ProblemaQuadroHorarios
             get { throw new NotImplementedException(); }
         }
 
+        public QuadroHorario()
+        {
+            Componentes = new List<IComponente>();
+        }
+
         public void AddComponente(IComponente Componente)
         {
-            throw new NotImplementedException();
+            if (!Componentes.Contains(Componente))
+                Componentes.Add(Componente);
         }
 
         public void RemoveComponente(IComponente Componente)
         {
-            throw new NotImplementedException();
+            if (Componentes.Contains(Componente))
+                Componentes.Remove(Componente);               
         }
 
-        #endregion
     }
 }
