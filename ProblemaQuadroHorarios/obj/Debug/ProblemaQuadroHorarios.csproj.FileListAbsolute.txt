@@ -1,0 +1,7 @@
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaQuadroHorarios\bin\Debug\ProblemaQuadroHorarios.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaQuadroHorarios\bin\Debug\ProblemaQuadroHorarios.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaQuadroHorarios\bin\Debug\HeuristicaConstrutiva.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaQuadroHorarios\bin\Debug\HeuristicaConstrutiva.pdb
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaQuadroHorarios\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaQuadroHorarios\obj\Debug\ProblemaQuadroHorarios.dll
+D:\Documentos\Faculdade\7º Período\Plataforma .NET - Petrônio\Projetos\Heuristicas\ProblemaQuadroHorarios\obj\Debug\ProblemaQuadroHorarios.pdb
