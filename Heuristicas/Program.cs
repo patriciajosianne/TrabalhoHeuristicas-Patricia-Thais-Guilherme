@@ -327,7 +327,7 @@ namespace Heuristicas
             cqh.AddRestricao(p3, qua12);
             cqh.AddRestricao(p3, qua34);
 
-            cqh.AddRestricao(p4, qui12);
+            cqh.AddRestricao(p4, qui12); 
             cqh.AddRestricao(p4, sex34);
 
             cqh.AddRestricao(p5, ter12);
@@ -335,12 +335,12 @@ namespace Heuristicas
             cqh.AddRestricao(p5, qui12);
 
             cqh.GerarSolucao();
-
             foreach (IComponente a in cqh.Solucao.Componentes)
             {
                 Alocacao alocacao = (Alocacao)a;
-                System.Console.WriteLine("\nHorário" + alocacao.Horario.Id + " \t\tProfessor: " + alocacao.Professor.Nome);
+                System.Console.WriteLine("\nHorário: " + alocacao.Horario.Id + " \t\tProfessor: " + alocacao.Professor.Nome);
             }
+            System.Console.ReadLine();
         }
     }
 }

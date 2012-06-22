@@ -11,6 +11,7 @@ namespace ProblemaQuadroHorarios
     {
 
         public List<Horario> Horarios { get; set; }
+        public List<Horario> HorariosAlocados { get; set; }
         public List<Professor> Professores { get; set; }
 
         public List<Alocacao> ListaTabu { get; set; }
@@ -21,6 +22,7 @@ namespace ProblemaQuadroHorarios
         public ConstroiQuadroHorario()
         {
             Horarios = new List<Horario>();
+            HorariosAlocados = new List<Horario>();
             Professores = new List<Professor>();
             ListaTabu = new List<Alocacao>();
             Quadro = new QuadroHorario();
@@ -57,7 +59,8 @@ namespace ProblemaQuadroHorarios
             foreach (Alocacao alocacao in Componentes)
             {
                 if (horarioMaisRestricoes.Restricoes.Count < alocacao.Horario.Restricoes.Count)
-                    horarioMaisRestricoes = alocacao.Horario;
+                    if(!HorariosAlocados.Contains(alocacao.Horario))
+                        horarioMaisRestricoes = alocacao.Horario;
             }
 
             //escolhendo alocacao que possui professor com mais restricoes
@@ -66,15 +69,90 @@ namespace ProblemaQuadroHorarios
             {
                 if (alocacao.Horario == horarioMaisRestricoes)
                     if (melhorAlocacao.Professor.Restricoes.Count < alocacao.Professor.Restricoes.Count)
-                        melhorAlocacao = alocacao;
+                        if(alocacao.Professor.HorariosAlocados.Count < 2)
+                            melhorAlocacao = alocacao;
             }
+            if (true)//(melhorAlocacao.Professor.Nome != null)
+            {
+                HorariosAlocados.Add(melhorAlocacao.Horario);
+                melhorAlocacao.Professor.AddHorariosAlocados(melhorAlocacao.Horario);
+                return (IComponente)melhorAlocacao;
+            }
+            else//Situação DeadLock
+            {
+                //busca horários não alocados ainda
+                List<Horario> horariosNaoAlocados = new List<Horario>();
+                foreach (Horario hor in Horarios)
+                {
+                    if (!HorariosAlocados.Contains(hor))
+                        horariosNaoAlocados.Add(hor);
+                }
 
-            return (IComponente)melhorAlocacao;
+                //busca professores não alocados
+                List<Professor> professoresNaoAlocados = new List<Professor>();
+                foreach (Professor prof in Professores)
+                {
+                    if (prof.HorariosAlocados.Count < 2)
+                        professoresNaoAlocados.Add(prof);
+                }
+
+                //busco professores alocados que podem dar aula em horarios nao alocados
+                List<Professor> professoresAlocadosSemRestricoes = new List<Professor>();
+                foreach (Professor prof in Professores)
+                {
+                    foreach(Horario h in horariosNaoAlocados)
+                    {
+                        if ((prof.HorariosAlocados.Count == 2) && (!prof.Restricoes.Contains(h)))
+                        {
+                            professoresAlocadosSemRestricoes.Add(prof);                        
+                        }                            
+                    }
+                }
+
+
+
+                /*
+                 Implementar o deadlock em si, que fará as trocas
+                 */
+
+                //Busco professores alocados que dao aula em horarios que professores disponiveis podem dar
+                /*foreach(Professor prof in professoresAlocadosSemRestricoes)
+                {
+                    foreach(Horario h in prof.HorariosAlocados)
+                    {
+                        foreach(Professor p in professoresNaoAlocados)
+                        {
+                            foreach(Horario hor in horariosNaoAlocados)
+                            {
+                                if(!ListaTabu.Contains(new Alocacao (p, h)))
+                                {
+                                    if((!p.Restricoes.Contains(h)) && (!prof.Restricoes.Contains(hor)))
+                                    {
+
+                                            prof.HorariosAlocados.Remove(h);
+                                            prof.HorariosAlocados.Add(hor);
+                                            p.AddHorariosAlocados(h);
+                                            HorariosAlocados.Add(hor);
+                                            Quadro.RemoveComponente(new Alocacao(prof,h));
+                                            Quadro.AddComponente(new Alocacao(prof,hor));
+                                            ListaTabu.Add(new Alocacao (p, h));
+                                            return new Alocacao (p, h);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }*/
+
+                                
+                return null;
+            }
         }
 
         public override ISolucao CriaSolucaoVazia()
         {
-            return new QuadroHorario();
+            return Quadro;
         }
 
         public override bool VerificaSolucaoCompleta()
