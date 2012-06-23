@@ -7,6 +7,7 @@ using HeuristicaConstrutiva;
 using HeuristicaMelhoria;
 using CaixeiroViajante;
 using ProblemaQuadroHorarios;
+using ProblemaMochila;
 
 namespace Heuristicas
 {
@@ -14,7 +15,8 @@ namespace Heuristicas
     {
         static void Main(string[] args)
         {
-            /*OtimizaMochila heuristica = new OtimizaMochila(75);
+            /****************************************** Problema Mochila *********************************************/
+            OtimizaMochila heuristica = new OtimizaMochila(75);
             heuristica.AddItem(new Item() { Descricao = "Lanterna", Peso = 3, Utilidade = 15 });
             heuristica.AddItem(new Item() { Descricao = "Canivete Suíço", Peso = 1, Utilidade = 10 });
             heuristica.AddItem(new Item() { Descricao = "Jaca", Peso = 30, Utilidade = 3 });
@@ -87,88 +89,11 @@ namespace Heuristicas
             System.Console.WriteLine("Peso da Mochila: " + heuristica.Mochila.CapacidadeAtual);
             System.Console.WriteLine("Utilidade da Mochila: " + heuristica.Solucao.Avaliacao);
 
-            System.Console.ReadLine();*/
+            System.Console.ReadLine();
 
-            /*Caminho grafo = new Caminho();
-    
-            grafo.AddAresta(new Vertice("BA"), new Vertice("DF"), 1446);
-            grafo.AddAresta(new Vertice("BA"), new Vertice("ES"), 1202);
-            grafo.AddAresta(new Vertice("BA"), new Vertice("MG"), 1372);
-            grafo.AddAresta(new Vertice("BA"), new Vertice("PR"), 2385);
-            grafo.AddAresta(new Vertice("BA"), new Vertice("RJ"), 1649);
-            grafo.AddAresta(new Vertice("BA"), new Vertice("SE"), 2682);
-            grafo.AddAresta(new Vertice("BA"), new Vertice("SP"), 1962);
-            grafo.AddAresta(new Vertice("DF"), new Vertice("ES"), 1239);
-            grafo.AddAresta(new Vertice("DF"), new Vertice("MG"), 716);
-            grafo.AddAresta(new Vertice("DF"), new Vertice("PR"), 1366);
-            grafo.AddAresta(new Vertice("DF"), new Vertice("RJ"), 1148);
-            grafo.AddAresta(new Vertice("DF"), new Vertice("SE"), 1673);
-            grafo.AddAresta(new Vertice("DF"), new Vertice("SP"), 1015);
-            grafo.AddAresta(new Vertice("ES"), new Vertice("MG"), 524);
-            grafo.AddAresta(new Vertice("ES"), new Vertice("PR"), 1300);
-            grafo.AddAresta(new Vertice("ES"), new Vertice("RJ"), 521);
-            grafo.AddAresta(new Vertice("ES"), new Vertice("SE"), 1597);
-            grafo.AddAresta(new Vertice("ES"), new Vertice("SP"), 882);
-            grafo.AddAresta(new Vertice("MG"), new Vertice("PR"), 1004);
-            grafo.AddAresta(new Vertice("MG"), new Vertice("RJ"), 434);
-            grafo.AddAresta(new Vertice("MG"), new Vertice("SE"), 1301);
-            grafo.AddAresta(new Vertice("MG"), new Vertice("SP"), 586);
-            grafo.AddAresta(new Vertice("PR"), new Vertice("RJ"), 852);
-            grafo.AddAresta(new Vertice("PR"), new Vertice("SE"), 300);
-            grafo.AddAresta(new Vertice("PR"), new Vertice("SP"), 408);
-            grafo.AddAresta(new Vertice("RJ"), new Vertice("SE"), 1144);
-            grafo.AddAresta(new Vertice("RJ"), new Vertice("SP"), 429);
-            grafo.AddAresta(new Vertice("SE"), new Vertice("SP"), 705);
 
-            ConstroiGrafo constroi = new ConstroiGrafo(8);
-            constroi.CidadeInicial = new Vertice("MG");
-            constroi.GerarSolucao();
-
-            foreach (IComponente c in constroi.Solucao.Componentes)
-            {
-                Aresta aresta = (Aresta)c;
-                System.Console.WriteLine("Cidade Origem: "+ aresta.CidadeOrigem + " Cidade Destino: " + aresta.CidadeDestino + " Distância: " + aresta.Distancia);
-            }*/
-
-            
-            
-            /*constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("BA"), CidadeDestino = new Vertice("DF"), Distancia = 1446 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("BA"), CidadeDestino = new Vertice("ES"), Distancia = 1202 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("BA"), CidadeDestino = new Vertice("MG"), Distancia = 1372 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("BA"), CidadeDestino = new Vertice("PR"), Distancia = 2385 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("BA"), CidadeDestino = new Vertice("RJ"), Distancia = 1649 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("BA"), CidadeDestino = new Vertice("SE"), Distancia = 2682 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("BA"), CidadeDestino = new Vertice("SP"), Distancia = 1962 });
-
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("DF"), CidadeDestino = new Vertice("ES"), Distancia = 1239 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("DF"), CidadeDestino = new Vertice("MG"), Distancia = 716 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("DF"), CidadeDestino = new Vertice("PR"), Distancia = 1366 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("DF"), CidadeDestino = new Vertice("RJ"), Distancia = 1148 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("DF"), CidadeDestino = new Vertice("SE"), Distancia = 1673 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("DF"), CidadeDestino = new Vertice("SP"), Distancia = 1015 });
-
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("ES"), CidadeDestino = new Vertice("MG"), Distancia = 524 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("ES"), CidadeDestino = new Vertice("PR"), Distancia = 1300 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("ES"), CidadeDestino = new Vertice("RJ"), Distancia = 521 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("ES"), CidadeDestino = new Vertice("SE"), Distancia = 1597 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("ES"), CidadeDestino = new Vertice("SP"), Distancia = 882 });
-
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("MG"), CidadeDestino = new Vertice("PR"), Distancia = 1004 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("MG"), CidadeDestino = new Vertice("RJ"), Distancia = 434 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("MG"), CidadeDestino = new Vertice("SE"), Distancia = 1301 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("MG"), CidadeDestino = new Vertice("SP"), Distancia = 586 });
-
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("PR"), CidadeDestino = new Vertice("RJ"), Distancia = 852 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("PR"), CidadeDestino = new Vertice("SE"), Distancia = 300 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("PR"), CidadeDestino = new Vertice("SP"), Distancia = 408 });
-
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("RJ"), CidadeDestino = new Vertice("SE"), Distancia = 1144 });
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("RJ"), CidadeDestino = new Vertice("SP"), Distancia = 429 });
-
-            constroiGrafo.Arestas.Add(new Aresta { CidadeOrigem = new Vertice("SE"), CidadeDestino = new Vertice("SP"), Distancia = 705 });
-            */
-
-            /*ConstroiGrafo constroiGrafo = new ConstroiGrafo(8);
+            /****************************************** Problema Caixeiro Viajante *********************************************/
+            ConstroiGrafo constroiGrafo = new ConstroiGrafo(8);
             
             Vertice ba = new Vertice("BA");
             Vertice df = new Vertice("DF");
@@ -260,8 +185,12 @@ namespace Heuristicas
             {
                 Aresta aresta = (Aresta)a;
                 System.Console.WriteLine("\nCidade Origem" + aresta.CidadeOrigem.Valor + " \t\tCidade Destino: " + aresta.CidadeDestino.Valor + " \t\tDistancia: " + aresta.Distancia);
-            }*/
+            }
 
+
+
+
+            /****************************************** Problema Quadro de Horário *********************************************/
             ConstroiQuadroHorario cqh = new ConstroiQuadroHorario();
 
 

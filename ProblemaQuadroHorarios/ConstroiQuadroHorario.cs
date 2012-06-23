@@ -80,71 +80,6 @@ namespace ProblemaQuadroHorarios
             }
             else//Situação DeadLock
             {
-                /*//busca horários não alocados ainda
-                List<Horario> horariosNaoAlocados = new List<Horario>();
-                foreach (Horario hor in Horarios)
-                {
-                    if (!HorariosAlocados.Contains(hor))
-                        horariosNaoAlocados.Add(hor);
-                }
-
-                //busca professores não alocados
-                List<Professor> professoresNaoAlocados = new List<Professor>();
-                foreach (Professor prof in Professores)
-                {
-                    if (prof.HorariosAlocados.Count < 2)
-                        professoresNaoAlocados.Add(prof);
-                }
-
-                //busco professores alocados que podem dar aula em horarios nao alocados
-                List<Professor> professoresAlocadosSemRestricoes = new List<Professor>();
-                foreach (Professor prof in Professores)
-                {
-                    foreach(Horario h in horariosNaoAlocados)
-                    {
-                        if ((prof.HorariosAlocados.Count == 2) && (!prof.Restricoes.Contains(h)))
-                        {
-                            professoresAlocadosSemRestricoes.Add(prof);                        
-                        }                            
-                    }
-                }
-                */
-
-
-                /*
-                 Implementar o deadlock em si, que fará as trocas
-                 */
-
-                //Busco professores alocados que dao aula em horarios que professores disponiveis podem dar
-                /*foreach(Professor prof in professoresAlocadosSemRestricoes)
-                {
-                    foreach(Horario h in prof.HorariosAlocados)
-                    {
-                        foreach(Professor p in professoresNaoAlocados)
-                        {
-                            foreach(Horario hor in horariosNaoAlocados)
-                            {
-                                if(!ListaTabu.Contains(new Alocacao (p, h)))
-                                {
-                                    if((!p.Restricoes.Contains(h)) && (!prof.Restricoes.Contains(hor)))
-                                    {
-
-                                            prof.HorariosAlocados.Remove(h);
-                                            prof.HorariosAlocados.Add(hor);
-                                            p.AddHorariosAlocados(h);
-                                            HorariosAlocados.Add(hor);
-                                            Quadro.RemoveComponente(new Alocacao(prof,h));
-                                            Quadro.AddComponente(new Alocacao(prof,hor));
-                                            ListaTabu.Add(new Alocacao (p, h));
-                                            return new Alocacao (p, h);
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }*/
-
                 //busca um horário não alocados ainda
                 Horario horarioNaoAlocado = new Horario();
                 foreach (Horario hor in Horarios)
@@ -172,8 +107,7 @@ namespace ProblemaQuadroHorarios
                     {
                         foreach (Professor p in professoresNaoAlocados)
                         {
-                            //incluir validacao de lista tabu
-                            if ((!p.Restricoes.Contains(a.Horario))&&(p.HorariosAlocados.Count<2))
+                            if ((!p.Restricoes.Contains(a.Horario))&&(p.HorariosAlocados.Count<2)&&(p!=a.Professor))
                             {
                                 Alocacao aloc = new Alocacao();
                                 aloc = a;

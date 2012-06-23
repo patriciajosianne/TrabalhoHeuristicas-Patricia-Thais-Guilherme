@@ -31,8 +31,8 @@ namespace CaixeiroViajante
         public override List<IComponente> GerarComponentes()
         {
             List<IComponente> arestas = new List<IComponente>();
-            //if (Arestas.Count == 0)
-            if(Grafo.Componentes.Count == 0)
+            if (Arestas.Count == 0)
+            //if(Grafo.Componentes.Count == 0)
             {
                 foreach (Aresta a in CidadeInicial.Arestas())
                     if (!VerificaSeJaFoiVizitado(a))
@@ -74,7 +74,7 @@ namespace CaixeiroViajante
 
         public override ISolucao CriaSolucaoVazia()
         {
-            return (ISolucao)new Caminho();
+            return (ISolucao) Grafo;
         }
         
 
