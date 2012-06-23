@@ -77,20 +77,21 @@ namespace Heuristicas
             
 
             heuristica.GerarSolucao();
+
+            System.Console.WriteLine("===================+==========Problema da Mochila==============================\n");
             int u = 0;
             foreach (IComponente c in heuristica.Solucao.Componentes)
             {
                 Item item = (Item)c;
                 u += item.Utilidade;
-                System.Console.WriteLine(item.Descricao + " \t\t\tPeso: " + item.Peso + " \tUtilidade: " + item.Utilidade);
+                System.Console.WriteLine(item.Descricao + " \t\t\tPeso: " + item.Peso + " \t\tUtilidade: " + item.Utilidade);
             }
 
-            System.Console.WriteLine("\n===================================================\n ");
-            System.Console.WriteLine("Peso da Mochila: " + heuristica.Mochila.CapacidadeAtual);
+            System.Console.WriteLine("\n\nPeso da Mochila: " + heuristica.Mochila.CapacidadeAtual);
             System.Console.WriteLine("Utilidade da Mochila: " + heuristica.Solucao.Avaliacao);
 
-            System.Console.ReadLine();
-
+            
+            
 
             /****************************************** Problema Caixeiro Viajante *********************************************/
             ConstroiGrafo constroiGrafo = new ConstroiGrafo(8);
@@ -181,11 +182,17 @@ namespace Heuristicas
 
             constroiGrafo.GerarSolucao();
 
+            System.Console.WriteLine("\n\n============================Problema Caixeiro Viajante==========================\n");
+
+            int somaDistancias = 0;
             foreach (IComponente a in constroiGrafo.Solucao.Componentes)
             {
                 Aresta aresta = (Aresta)a;
-                System.Console.WriteLine("\nCidade Origem" + aresta.CidadeOrigem.Valor + " \t\tCidade Destino: " + aresta.CidadeDestino.Valor + " \t\tDistancia: " + aresta.Distancia);
+                System.Console.WriteLine("\nCidade Origem: " + aresta.CidadeOrigem.Valor + " \t\tCidade Destino: " + aresta.CidadeDestino.Valor + " \t\tDistancia: " + aresta.Distancia);
+                somaDistancias += aresta.Distancia;
             }
+
+            System.Console.WriteLine("\n\nDistância total: " + somaDistancias+"\n\n\n\n\n");
 
 
 
@@ -264,6 +271,8 @@ namespace Heuristicas
             cqh.AddRestricao(p5, qui12);
 
             cqh.GerarSolucao();
+
+            System.Console.WriteLine("\n\n============================Problema Quadro de Horário==========================\n");
             foreach (IComponente a in cqh.Solucao.Componentes)
             {
                 Alocacao alocacao = (Alocacao)a;

@@ -19,7 +19,10 @@ namespace CaixeiroViajante
         public void Add(Vertice v, int valor)
         {
             if (!Vizinhos.Keys.Contains(v))
+            {
                 Vizinhos.Add(v, valor);
+                v.Vizinhos.Add(this, valor);
+            }
         }
 
         public List<Aresta> Arestas()

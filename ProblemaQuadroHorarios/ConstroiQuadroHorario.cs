@@ -13,9 +13,6 @@ namespace ProblemaQuadroHorarios
         public List<Horario> Horarios { get; set; }
         public List<Horario> HorariosAlocados { get; set; }
         public List<Professor> Professores { get; set; }
-
-        public List<Alocacao> ListaTabu { get; set; }
-
         public QuadroHorario Quadro { get; set; }
 
 
@@ -24,7 +21,6 @@ namespace ProblemaQuadroHorarios
             Horarios = new List<Horario>();
             HorariosAlocados = new List<Horario>();
             Professores = new List<Professor>();
-            ListaTabu = new List<Alocacao>();
             Quadro = new QuadroHorario();
         }
 
@@ -44,7 +40,7 @@ namespace ProblemaQuadroHorarios
             {
                 foreach (Professor prof in Professores)
                 {
-                    if((prof.HorariosAlocados.Count < 2) && (!prof.Restricoes.Contains(hor)) && (!ListaTabu.Contains(new Alocacao(prof, hor))))
+                    if((prof.HorariosAlocados.Count < 2) && (!prof.Restricoes.Contains(hor)))
                                 componentes.Add((IComponente) new Alocacao(prof, hor));
                 }
             }

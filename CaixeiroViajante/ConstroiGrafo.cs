@@ -12,34 +12,27 @@ namespace CaixeiroViajante
         public Queue<Vertice> VerticesJaVisitados { get; set; }
         public Vertice CidadeInicial { get; set; }
         public int QtdeCidades { get; set; }
-        public Caminho Grafo
-        {
-            get
-            {
-                return (Caminho)Solucao;
-            }
-        }
+        public Caminho Grafo { get; set; }
 
         public ConstroiGrafo(int qtdCidade)
         {
             QtdeCidades = qtdCidade;
             Arestas = new List<Aresta>();
             VerticesJaVisitados = new Queue<Vertice>();
-            //Grafo = new Caminho();
+            Grafo = new Caminho();
         }
 
         public override List<IComponente> GerarComponentes()
         {
             List<IComponente> arestas = new List<IComponente>();
-            if (Arestas.Count == 0)
-            //if(Grafo.Componentes.Count == 0)
+            if(Grafo.Componentes.Count == 0)
             {
                 foreach (Aresta a in CidadeInicial.Arestas())
                     if (!VerificaSeJaFoiVizitado(a))
                         arestas.Add(a);
             }
             else
-                foreach (Aresta a in VerticesJaVisitados.Last().Arestas())//isso não está funcionando. Não está retornando nada.
+                foreach (Aresta a in VerticesJaVisitados.Last().Arestas())
                     if (!VerificaSeJaFoiVizitado(a)) 
                         arestas.Add(a);
             return arestas;
@@ -80,7 +73,11 @@ namespace CaixeiroViajante
 
         public override bool VerificaSolucaoCompleta()
         {
-            if (Arestas.LastOrDefault().CidadeDestino == CidadeInicial)
+            IComponente comp = Grafo.Componentes.LastOrDefault();
+            Aresta a = (Aresta)comp;
+            if (a == null)
+                return false;
+            else if (a.CidadeDestino == CidadeInicial)
                 return true;
             else
                 return false;
